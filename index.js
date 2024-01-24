@@ -1,17 +1,17 @@
-// Declare customerName to be 'bob' in global scope
-let customerName = 'bob';
+// customerName: Declare a variable in global scope using the var keyword
+var customerName = 'bob';
 
-// Function to modify the customerName variable to uppercase
+// upperCaseCustomerName(): Function that uppercases the global customerName
 function upperCaseCustomerName() {
     customerName = customerName.toUpperCase();
 }
 
-// Function to set a new global variable bestCustomer
+// setBestCustomer(): Function that declares a global variable bestCustomer
 function setBestCustomer() {
-    bestCustomer = 'not bob'; // Implicitly global
+    bestCustomer = 'not bob'; // This implicitly creates a global variable
 }
 
-// Function to overwrite the best customer
+// overwriteBestCustomer(): Function that changes the global bestCustomer variable
 function overwriteBestCustomer() {
     bestCustomer = 'maybe bob';
 }
@@ -21,3 +21,4 @@ const leastFavoriteCustomer = 'some initial value';
 function changeLeastFavoriteCustomer() {
     leastFavoriteCustomer = 'attempting to change value'; // This should throw an error
 }
+    
